@@ -1,0 +1,74 @@
+/* Styling for today's weather section */
+.todays-weather {
+    border: solid;
+    border-color: gray;
+    border-width: thin;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+/* Styling for the main title */
+main h1 {
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+/* Styling for the search section */
+.search {
+    padding-left: 2%;
+}
+
+/* Styling for the input container */
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the search button */
+#button-addon1 {
+    border: solid;
+    border-color: rgb(221, 221, 221);
+    border-width: thin;
+    text-align: center;
+    background-color: rgb(101, 155, 220);
+    color: white;
+    margin-top: 5%;
+}
+
+/* Hover effect for the search button */
+#button-addon1:hover {
+    background-color: rgba(101, 155, 220, 0.751);
+    color: black;
+}
+
+/* Styling for the 5-day forecast cards */
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for each individual card */
+.card-1, .card-2, .card-3, .card-4, .card-5 {
+    background-color: rgb(0, 0, 53);
+    color: white;
+    padding: 1%;
+}
+
+/* Styling for the search buttons container */
+.search-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for search buttons */
+.search-buttons button {
+    color: black;
+    background-color: rgb(163, 162, 162);
+}
+
+/* Hover effect for search buttons */
+.search-buttons button:hover {
+    color: white;
+    background-color: rgba(163, 162, 162, 0.75);
+}
