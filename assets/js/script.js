@@ -11,7 +11,7 @@ function getCurrentWeather() {
     var searchButtonsDiv = document.querySelector('.search-buttons');
 
     // Fetch current weather data from the OpenWeatherMap API
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${userInputCity}&appid=${APIKey}&units=imperial`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${userInputCity}&appid=${APIKey}&units=imperial`)
         .then(function (response) {
             return response.json();
         })
@@ -79,7 +79,7 @@ function getCurrentWeather() {
 
 function getFutureForecast() {
     var userInputCity = document.getElementById('city').value;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${userInputCity}&appid=${APIKey}&units=imperial`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${userInputCity}&appid=${APIKey}&units=imperial`)
         .then(function (response) {
             return response.json();
         })
@@ -87,7 +87,7 @@ function getFutureForecast() {
             console.log(data);
             var lat = data.coord.lat;
             var lon = data.coord.lon;
-            fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${APIKey}&units=imperial`)
+            fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${APIKey}&units=imperial`)
                 .then(function (response) {
                     return response.json();
                 })
